@@ -10,11 +10,11 @@ def start(bot, update):
 	chat_id = update.message.chat_id
 	#once the first message is received, wait for a long time so the user can erase messages
 	time.sleep(7)
-	bot.sendMessage(chat_id=chat_id,text = 'Sete coisas importantes para um relacionamento saudável:')
+	bot.sendMessage(chat_id=chat_id,text = 'Olá! Vamos falar sobre sete coisas importantes para um relacionamento saudável?')
 	time.sleep(2)
 	bot.sendMessage(chat_id=chat_id,text = '1.	Sentir-se confortável e segura perto da outra pessoa\n2.Estar em um relacionamento em que a liberdade de escolha seja a base da relação\n3.	Ter o diálogo como elemento fundamental para resolver as discordâncias')
 	time.sleep(4)
-	bot.sendMessage(chat_id=chat_id,text = '4.	Estar com alguém que valorize quem você é\n 5.	Ser uma pessoa melhor primeiro para você mesma\n6.	Ter um(a) companheiro(a) que vibre com as suas conquistas')
+	bot.sendMessage(chat_id=chat_id,text = '4.	Estar com alguém que valorize quem você é\n 5.	Ser uma pessoa melhor primeiro para você mesma\n6.	Ter um(a) companheiro(a) que vibre com as suas conquistas\n7.	Relacionamento saudável combina com amigos e familiares por perto')
 	time.sleep(3)
 	bot.sendMessage(chat_id=chat_id,text = 'Você sente falta dessas coisas no seu relacionamento?')
 
@@ -32,7 +32,7 @@ updater = Updater('528704631:AAHGVV17f0VujJjxWVhOsrOz2v_6o-NOXTM')
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
 
-updater.dispatcher.add_handler(RegexHandler('sim', getReply))
+updater.dispatcher.add_handler(RegexHandler('Sim', getReply))
 
 updater.start_polling()
 updater.idle()
