@@ -1,4 +1,4 @@
-##Na pasta ```presentation``` será possível encontrar a apresentação do Pitch.##
+## Na pasta ```presentation``` será possível encontrar a apresentação do Pitch. ##
 
 # Valentina
 Somos a Valentina, um sistema criado para ajudar na prevenção de casos de violência doméstica. A partir de uma base de dados (DataSenado), identificamos características de mulheres que já sofreram violência doméstica, e criamos um modelo que prevê se uma mulher pode estar em situação de risco. Assim, oferecemos informação e suporte já no início do problema.
