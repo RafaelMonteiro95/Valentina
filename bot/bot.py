@@ -9,21 +9,20 @@ status = 'idle'
 def start(bot, update):
 	chat_id = update.message.chat_id
 	#once the first message is received, wait for a long time so the user can erase messages
-	time.sleep(3)
-	bot.sendMessage(chat_id=chat_id,text = 'Como identificar a manipulação?')
+	time.sleep(7)
+	bot.sendMessage(chat_id=chat_id,text = 'Sete coisas importantes para um relacionamento saudável:')
 	time.sleep(2)
-	bot.sendMessage(chat_id=chat_id,text = 'Existe uma diferença entre influência social saudável e manipulação psicológica.')
+	bot.sendMessage(chat_id=chat_id,text = '1.	Sentir-se confortável e segura perto da outra pessoa\n2.Estar em um relacionamento em que a liberdade de escolha seja a base da relação\n3.	Ter o diálogo como elemento fundamental para resolver as discordâncias')
 	time.sleep(4)
-	bot.sendMessage(chat_id=chat_id,text = 'Influência social saudável é parte do dar e receber de relacionamentos construtivos. Na manipulação psicológica, uma pessoa é usada para o benefício de outra. A pessoa manipuladora deliberadamente cria um desequilíbrio de poder e o explora para servir aos seus próprios interesses.')
+	bot.sendMessage(chat_id=chat_id,text = '4.	Estar com alguém que valorize quem você é\n 5.	Ser uma pessoa melhor primeiro para você mesma\n6.	Ter um(a) companheiro(a) que vibre com as suas conquistas')
 	time.sleep(3)
-	bot.sendMessage(chat_id=chat_id,text = 'Alguma destas situações soa familiar para você em algum de seus relacionamentos?')
-	status = 'waiting'
+	bot.sendMessage(chat_id=chat_id,text = 'Você sente falta dessas coisas no seu relacionamento?')
 
 def getReply(bot, update):
 	time.sleep(1)
 	update.message.reply_text('Te entendo. Isso acontece com muitas mulheres')
 	time.sleep(2)
-	update.message.reply_text('Aqui tem algumas dicas para você lidar melhor com isso, e algumas redes que podem te apoiar. www.valentina.com/guia-manipulação')
+	update.message.reply_text('Aqui tem algumas dicas para você lidar melhor com isso, e algumas redes que podem te apoiar. www.valentina.com/guia-relacionamento-saudavel')
 	time.sleep(3)
 	update.message.reply_text('Se precisar de mim, estou sempre aqui!')
 
